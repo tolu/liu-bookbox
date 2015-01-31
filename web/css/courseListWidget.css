@@ -1,0 +1,21 @@
+.courseListWidget-item, .categoryListWidget-item{
+	margin: 0px 3px;
+	padding:2px;
+	
+	}
+
+.courseListWidget-item h3, .categoryListWidget-item h3{
+margin:0px;
+padding:0px;
+	}
+	
+.courseListWidget-item p, .categoryListWidget-item p{
+margin:0px;
+padding:0px;
+	}		
+	
+#courseListWidget, #categoryListWidget{
+	padding-bottom:4px;
+	}
+	
+	

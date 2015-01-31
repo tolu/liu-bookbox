@@ -1,0 +1,28 @@
+dev:
+  propel:
+    param:
+      classname: DebugPDO
+test:
+  propel:
+    param:
+      classname: DebugPDO
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      classname:  PropelPDO
+      
+      # settings for presponse.se database
+      #dsn:        mysql:host=mydb13.surftown.se;dbname=toblu56_tddd27
+      #username:   toblu56_bookbox
+      #password:   tobluulfda
+      
+      # settings for local database
+      dsn:        mysql:host=localhost;dbname=bookbox
+      username:   bookbox
+      password:   tobluulfda
+      
+      encoding:   utf8
+      persistent: true
+      pooling:    true
+

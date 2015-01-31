@@ -1,0 +1,18 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [main.css, redmond/jquery-ui-1.7.1.custom.css, book.css, shoppingCart.css, profile.css, courseListWidget.css, courseList.css]
+
+  javascripts:    [jquery-1.3.2.min.js, jquery-ui-1.7.1.custom.min.js, menu-Functions.js, search-Functions.js, user-menu-Functions.js, shoppingCart-Functions-min.js, book-Functions.js, profile-Functions.js, courseListWidget-Functions.js, categoryListWidget-Functions.js, public-Functions.js, comment-Functions.js,category-Functions.js, userForm.js,]
+
+  has_layout:     on
+  layout:         layout
+

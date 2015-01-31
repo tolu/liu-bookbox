@@ -1,0 +1,414 @@
+*{
+		font-family:helvetica,verdana,san-serif;
+		font-size:12px;
+}
+body{
+	margin:0px;
+	background-color:#000000;
+}
+
+
+#spacer{	
+	margin: 0 auto; width:900px;
+}
+#wrapper{
+	float:left;
+	background-color:#FFFFFF;
+	width:900px;
+}
+#header{
+	background-image: url(../images/switcharooHeader.jpg);
+		float:left;
+		width:100%;
+		height:120px;
+}
+
+#accountMenu, #messageBox{
+	float:left;
+	width:858px;
+	padding-top: 4px;
+	padding-bottom:0px;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+
+#accountMenu li{
+	float:left;  
+	padding: 0px;
+	margin:0px;
+	margin-right:15px;
+	list-style-type:none;
+}
+
+#accountMenu a{
+	text-decoration:none;
+}
+
+#accountMenu .rightMenuItem{
+		float:right;  
+	padding: 0px;
+	margin:0px;
+	
+	list-style-type:none;
+	
+	}
+
+.widgetInitializer{
+		float:left;
+		width:175px;
+		margin:5px;		
+	}
+	
+.widgetInitializer h3, #searchField{
+	margin:4px 2px;
+	padding:5px;
+}
+
+.widgetInitializer p, #searchField p{
+	margin:4px 2px;
+	padding:5px;
+	padding-bottom:0px;
+}	
+
+
+.widgetInitializer li, #searchField li{
+		height:20px;
+		margin:0px;
+		padding:0px;
+		}
+
+.widgetInitializer ul, #searchField ul{
+		margin:0px; 
+		padding:0px;
+		list-style-type:none;
+		}
+
+.menuContent li, .widgetContent li{
+		height:16px;
+		}
+	
+#menu{
+		padding:0px;
+	/*	background-color:#00FF00;  */
+}
+
+#menu ul{ 
+		margin:2px; 
+		margin-top:4px; 
+		}
+		
+#menu a{ 
+		padding-top:3px; 
+		font-weight:bold;
+		text-decoration: none;
+		}
+
+#menu .menuItemWithSpaceAfter{
+		margin-left:-4px;
+		margin-bottom:3px;
+		color: #1d5987;
+	}
+
+#content{
+
+		float:left;
+		width:524px;
+		margin-top: 5px;
+		margin-bottom:5px;
+		min-height:200px;
+}
+
+.headerSpacing{
+	margin:4px 2px;
+	padding:5px;
+
+	}
+
+.contentColumn{
+	float:left;
+	width:220px;
+	margin:10px;
+	text-align:justify;	
+}
+
+#rightSidebar{ float:right;}
+
+#searchField {
+	
+	position: relative;
+	top: 84px;
+	left:679px;
+	width:250px;
+
+}
+	
+#searchField input{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+		width: 169px;
+	}
+
+#searchField.searchContent{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+		width: 169px;
+	}
+	
+
+	
+	
+#searchFieldResult{
+     border: 1px solid #DDDDDD;
+	margin-top:-6px;
+	margin-left:33px;
+	 position: absolute;
+	 width:100%;
+	 z-index:2000;
+	 width: 171px;
+	 background-color:#FFFFFF; 
+	 }
+
+#searchFieldResultClearBtn{
+	margin-top:-22px;
+	margin-left:189px;
+	position: absolute;
+	z-index:2000;
+}
+
+
+#searchFieldResult li{
+	padding-top:3px;
+	padding-bottom:0px;
+	}
+	 
+	 
+#searchFieldResult a{
+	text-decoration: none;
+	padding-left:5px;
+	color: #000000;
+	 }
+
+	 
+#buyButton {float:right;}
+
+.floatNone{ float:none;}
+
+#footer{
+		border-top:solid 1px #aaaaaa;
+		float:left;
+		width:96%;
+		margin: 0px 7px;
+		margin-top:4px;
+		padding:5px 10px;
+}
+
+/*----------addBookDialog---------*/
+#addBookDialog * {
+  float:left;
+}
+#addBookDialog #isbn, #addBookDialog label[for=isbn] {
+  margin-left:90px;
+}
+#addBookDialog .add-book-help { margin-left:45px; }
+#addBookDialog img { 
+  width:85px; 
+  margin-bottom:-30px;
+  position:relative;
+  bottom:33px;
+}
+#addBookDialog label {
+  width:60%; 
+  margin-top:4px; 
+  margin-left:5px;
+  font-weight:bold;
+}
+#addBookDialog .descr { clear:left; }
+#hiddenFormElements input {margin-left:5px;}
+#addBookDialog .sliderTag {width:100%;}
+#addBookDialog #description {width:100%;}
+
+/*------------loginbox-----------*/
+
+.addUserBtn{
+  float:right;
+  clear:left;
+ // position:relative;
+  padding:2px;
+	margin:3px;
+  //right:-6px;
+  text-decoration:none;
+}
+
+.addUserBtn *{
+  float:left;
+}
+
+#loginBox form{ margin:3px;}
+#loginBox .inputFiled{ width:96%;}
+.addUserBtn p{
+  margin:0px;
+  padding:0px;
+  margin-top:2px;
+  
+}
+
+
+/*------------------------------*/
+
+.hidden { display:none; }
+
+.even{
+	background-color:#dfeffc;
+	border:1px solid #c5dbec;
+	margin-left:-1px;
+
+	}
+
+.odd{background-color:#ffffff;}
+
+.listItemRemoved{background-color:#00FF00;}
+
+
+/*---------- admin css --------------*/
+.userInformation{
+	float:left;
+	width:170px;
+	padding:2px;
+	margin:2px;
+	}
+.userInformation p{
+	float:left;
+	width:80%;
+	margin:0px;
+	padding:0px;
+	}
+	
+.userInformation h4{
+	float:left;
+	width:80%;
+	margin:0px;
+	padding:0px;
+	}	
+	.userInformation span{
+	float:right;
+	}
+	
+	.userInformation .removeUserBtn{
+	float:right;
+	}
+/*-------------- Comments -------------------*/
+#commentList .comment{
+	width:95%;
+	float:left;
+	padding:3px;
+	}
+
+#content #commentList .comment{
+	margin:5px;
+		float:left;
+	}		
+
+.comment *{float:left;}
+	
+.comment a{
+		font-weight:bold;
+		text-decoration: none;
+	}	
+
+
+.comment p{
+	margin:2px;
+	width:95%;
+	}	
+	
+#commentField{
+	padding:3px;
+	margin-bottom:6px;
+	}
+
+.removeCommentBtn{
+  	float:right;
+  	clear:left;
+
+}
+
+#commentField h3{
+	margin:3px 0px;
+	padding-left:3px;
+	}	
+	
+#commentContent{
+	width: 90%;
+	margin-left:3px;
+	}	
+
+/*------------ category ---------------*/
+
+
+#categoryList{
+	width:70%;
+	
+	}
+
+.category{
+	width:100%;
+	float:left;
+	margin:5px;
+	padding:3px;
+	}
+
+
+.category .categoryName{
+	float:left;
+			font-weight:bold;
+		text-decoration: none;
+}
+
+#addCategoryBtn{
+	float:right;
+	margin-right:5px;
+	padding:2px;
+	padding-right:4px;
+
+	text-decoration: none;
+	}
+
+#addCategoryBtn span{position:relative; bottom: 2px; margin-right: -2px;}	
+
+#addCategoryBtn *{
+	float: left;
+	}
+
+.removeCategoryBtn{
+		float:right;
+		text-decoration: none;
+	}
+
+.categoryRemoved{float:right;}	
+
+/**********************************************/
+/* style for button that change the book view */
+/**********************************************/
+.displayStyleBtn {
+  float:right;
+  margin-left:4px;
+  height:16px;
+  width:16px;
+  text-align:center;
+  
+  overflow:hidden;
+}
+.my-display-icon {
+  position:relative;
+  right:4px;
+  bottom:4px;
+}
+
+/*  trevlig stil för fet orange text  */
+.currentPriceLbl, .bokens-skick {
+  font-weight:bold;
+  color:rgb(255, 128, 0);
+}

@@ -1,0 +1,169 @@
+.bookShow{ display:inline;}
+.bookHide{ display:none;}
+
+.book{
+	float:left;
+	width:235px;
+  height:55px;
+	margin-left:10px;
+	margin-bottom:10px;
+	padding:5px;
+	}
+
+.book * { float:left; }
+
+.bookContent { width:235px; }
+
+.book h3{
+	width: 75%;
+	margin: 0px 5px;
+	margin-bottom: 0px; 
+	padding: 0px;
+  width:180px;
+  height:30px;
+  overflow:hidden;
+	}
+
+.book img{
+	margin-left:5px; 
+	height:50px;
+	}
+  
+#searchFieldResult .book{
+	width:155px;
+	margin-left:3px;
+	margin-bottom:5px;
+	padding:5px;
+	}
+
+.BookDetailsBtn, .BookSellerBtn, .BookCommentBtn {
+  float:right;
+  clear:left;
+  position:relative;
+  padding:2px;
+  bottom:11px;
+  right:-6px;
+  text-decoration:none;
+}
+
+.booksForSale {
+  float:left;
+  padding-right:2px;
+  padding-left:2px;
+  color:green;
+  font-weight:bold;
+  font-size:120%;
+}
+
+.bookInfo, .bookSellerInfo {
+  display:none;
+}
+
+/**************************************/
+/* display style for book details box */
+/**************************************/
+
+#infoBoxContent .bookContent { float:left;width:380px; }
+#infoBoxContent .bookContent *{float:left;}
+#infoBoxContent .BookDetailsBtn, 
+#infoBoxContent .BookSellerBtn, 
+#infoBoxContent .booksForSale,
+#infoBoxContent .removeIcon,
+#infoBoxContent  .BookCommentBtn,
+.book .removeIcon {
+  display:none;
+}
+#infoBoxContent img {
+  margin-right:5px;
+  margin-bottom:5px;
+}
+#infoBoxContent h3 {
+  width:70%;
+  margin:0;
+  margin-bottom:5px;
+}
+#infoBoxContent .authors a{
+  width:70%;
+}
+#infoBoxContent .authors {
+  margin-top:5px;
+  width:70%;
+}
+#infoBoxContent .description {
+  width:100%;
+  max-height:300px;
+  overflow:auto;
+}
+
+/**************************************************/
+/* detaljerad information som visas om försäljare */
+/**************************************************/
+.bookSeller {
+  border-bottom:1px solid rgb(255,128,64);
+}
+.bookSeller, .bookSeller * {
+  float:left;
+}
+#infoBoxContent .bookSeller .sellersName{
+  margin-left:5px;
+  margin-top:1px;
+  width:170px;
+  font-weight:bold;
+}
+#infoBoxContent .bookSeller .sellersPrice{
+  margin-top:1px;
+  width:60px;
+  font-weight:bold;
+  color:green;
+}
+.book-quality-bar {
+  width:80px;
+  height:8px;
+  margin-top:4px;
+}
+.sellerInfoHeader {
+  float:left;
+  border-bottom:1px solid black;
+  margin-bottom:7px;
+  font-variant:small-caps;
+}
+.sellerInfoHeader *{
+  float:left;
+  font-weight:bold;
+}
+.sellerInfoHeader .name {
+  margin-left:39px;
+  width:170px;
+}
+.sellerInfoHeader .price {
+  width:60px;
+}
+
+/***********************************/
+/* a list display format for books */
+/***********************************/
+.list-book {
+  float:left;
+  height:16px;
+  padding:3px 6px;
+  margin:2px 7px;
+  width:497px;
+}
+.list-book *{
+  display:inline;
+}
+.list-book img {
+  height:12px;
+  margin-right:5px;
+}
+.list-book .bookInfo, .list-book .bookSellerInfo, .list-book a {
+  display:none;
+}
+.list-book .BookDetailsBtn,  .list-book .ui-icon{
+  display:block;
+}
+.list-book .BookDetailsBtn {
+  float:right;
+  position:relative;
+  bottom:1.48em;
+}

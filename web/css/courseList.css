@@ -1,0 +1,57 @@
+.courseList, .courseLitteratureList{
+	width:75%;
+	float:left;
+	}
+
+#profileCourseInfo ul, #profileCourseLitterature ul{ 
+		margin:0px;
+		padding:0px;
+	  list-style-type: none;
+	  float:left;
+
+		}
+		
+#profileCourseInfo li, #profileCourseLitterature li{ 
+	  text-decoration:none;
+		margin-bottom:2px;
+			padding:2px;
+		float:left;
+		width:100%;
+
+		}
+
+.courseCode{font-weight:bold;}	
+
+#addCourseBtn{
+	padding:2px;
+	padding-right:4px;
+	}
+
+#addCourseBtn span{position:relative; bottom: 2px; margin-right: -2px;}	
+
+#addCourseBtn *{
+	float: left;
+	}
+
+	
+#profileCourseInfo a, #profileCourseLitterature a{
+	display:inline;
+	float:left;
+	text-decoration:none;
+	}	
+.courseList-icon{
+	margin:0px;
+	float:right;
+//	clear:left;
+	
+}
+
+.courseLitteratureListHeader{
+	font-size:14px;
+	padding-left:5px;
+	
+	}
+
+.courseLitteratureListItem{
+	margin-left:2px;
+	}

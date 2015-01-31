@@ -1,0 +1,90 @@
+propel:
+  user:
+    id: ~
+    fname:        varchar(255)
+    lname:        varchar(255)
+    city:         varchar(255)
+    street:       varchar(255)
+    postal_code:  varchar(255)
+    email:        varchar(255)
+    phone:        varchar(255)
+    credentials:  varchar(255)
+    created_on: { type: timestamp }
+    last_login: { type: timestamp }
+    password:     varchar(255)
+    image_path:   longvarchar
+    is_active:    boolean
+    
+  student:
+    student_id: ~
+    programme:  varchar(255)
+    
+  teacher:
+    teacher_id:   ~
+    institution:  varchar(255)
+  
+  author:
+    isbn10: { type: varchar(10), foreignTable: book, foreignReference: isbn10, primaryKey : true, onDelete: cascade  }
+    name:   { type: varchar(255), primaryKey : true }
+
+  book:
+    isbn10:    { type: varchar(10), required: true, primaryKey: true }
+    isbn13:    { type: bigint }
+    title:       varchar(255)
+    description: longvarchar
+    imagePath:   longvarchar
+    published:   timestamp
+    
+  booksForSale:
+    id:               ~
+    isbn10:         { type: varchar(10), foreignTable: book, foreignReference: isbn10 }
+    seller_id:      { type: integer, foreignTable: user, foreignReference: id, onDelete: cascade }
+    bookquality:    { type: integer}
+    added_on:       { type: timestamp }
+    price:          { type: float}
+    is_checked_out: { type: timestamp }
+    checked_out_by: { type: integer, foreignTable: user, foreignReference: id }
+    
+  comment:
+    id:           ~
+    user_id:      ~
+    isbn10:    { type: varchar(10), foreignTable: book, foreignReference: isbn10 }
+    content:    { type: longvarchar } 
+    created_on: { type: timestamp }
+    
+  rating:
+    type:         varchar(255)
+    type_id:    { type: varchar(10), foreignTable: book, foreignReference: isbn10, onDelete: cascade }
+    total_sum:  { type:integer }
+    created_on: { type: timestamp }
+    
+  sales:
+    id:          ~
+    isbn10:    { type: varchar(10), foreignTable: book, foreignReference: isbn10 }
+    buyer_id:  { type: integer, foreignTable: user, foreignReference: id }
+    seller_id: { type: integer, foreignTable: user, foreignReference: id }
+    added_on:  { type: timestamp }
+    sold_on:   { type: timestamp }
+    price:     { type:float }
+
+  category:
+    id:       ~
+    name:   varchar(255)
+    
+  bookInCategory:
+    isbn10: { type: varchar(10), foreignTable: book, foreignReference: isbn10 }
+    category_id: ~
+  
+  wishlist:
+    isbn10: {type: varchar(10), foreignTable: book, foreignReference: isbn10 }
+    user_id: ~
+      
+  courses:
+    id:         { type: varchar(255), required: true, primaryKey: true }
+    course_name:  varchar(255)
+    course_year:  varchar(255)
+    user_id:   ~	
+    
+  courselitterature:
+    isbn10:         { type: varchar(10), foreignTable: book, foreignReference: isbn10 }
+    course_code:    { type: varchar(255), foreignTable: courses, foreignReference: id }

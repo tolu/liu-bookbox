@@ -1,0 +1,111 @@
+#profileContent{
+	float:left;
+	margin:3px;
+	width:518px;
+	padding:0px;
+	}
+	
+#profileContent h1{
+	font-size: 18px;
+	margin:0px;
+	margin-bottom:10px;
+	float:left;
+	}
+	
+#profileContent p{
+	float:left;
+	margin:0px;
+	margin-bottom:3px;
+	padding:0px 5px;
+	width:100%;
+	}
+	
+#profileContent .spacerElement{
+	float:left;
+	width:65%;
+	margin-left:5px;	
+	}
+
+#editProfileBtn{
+	padding:2px;
+	padding-right:4px;
+	text-decoration:none;
+	}
+
+#editProfileBtn span{
+	position:relative; bottom: 2px;
+	}	
+
+#editProfileBtn *{
+	float: left;
+	}	
+
+.removedItem{ width:15px;height:15px;}	
+	
+#userSellList { margin:0px; padding:0px;}
+
+#profileContent .floatRight, #editTable th{ 
+	float:right; 
+	margin-top:2px;
+	margin-right:5px;
+	}
+
+  
+/***** STIL FÖR BÖCKER SOM DU SJÄLV SÄLJER *****/
+#userSellList * {
+  float:left;
+}
+#userSellList .my-book-for-sale{	
+	width:450px;
+	margin-left:10px;
+	margin-bottom:5px;
+	padding:4px;
+}
+.my-book-for-sale .my-title {
+  width:410px;
+  font-weight:bold;
+}
+.my-book-for-sale .my-price {
+  font-variant:small-caps;
+  font-weight:bold;
+  color:rgb(255, 128, 0);
+}
+.my-book-for-sale .up-days {
+  width:336px;
+}
+.my-book-for-sale a {
+  padding:0px 2px;
+  text-decoration:none;
+  padding:2px;
+  margin-left:3px;
+}
+
+/*****  stil för dialog med slider för att ändra pris på upplagda böcker  *****/
+.change-book-price {float:left;width:100%;}
+.change-book-price *{float:left; clear:left;}
+.change-book-price #slider {width:100%; margin-top:10px;}
+.change-book-price #price-lbl, .change-book-price button { margin-top:10px;clear:none;}
+.change-book-price #price-lbl { width:155px;}
+ 
+/*****  stil för böcker som du har köpt själv  *****/
+#userBoughtList * {
+  float:left;
+}
+.my-bought-book {
+  width:450px;
+  margin-left:10px;
+  margin-bottom:5px;
+  padding:4px;
+}
+.my-bought-book .bought-title {
+  width:410px;
+  font-weight:bold;
+}
+.my-bought-book .bought-price {
+  font-variant:small-caps;
+  font-weight:bold;
+  color:rgb(255, 128, 0);
+}
+.my-bought-book .bought-on {
+  width:140px;
+}
