@@ -7,3 +7,8 @@ Basically it's a PHP site using Symfony framework and jQuery (1.3.2) with jQuery
 Original tagline was *to lower the costs of drunkards for students...* (not even proper english)
 
 Actual idea was to reduce waste (read any of your old school books lately?) and unnecessary expenses for students as some litterature can get quite expensive.
+
+
+## License
+
+MIT @ https://tolu.mit-license.org/
